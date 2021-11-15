@@ -1,8 +1,9 @@
+// Actividad 4.1 - Simulación de listas con grafos - Equipo 2
+
 #include <iostream>
 #include <cstdlib>
 using namespace std;
 #include "Grafo.h"
-
 
 int main(){
 
