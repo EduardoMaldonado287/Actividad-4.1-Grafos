@@ -13,7 +13,7 @@ public:
         headArista = nullptr;
     }
 
-    // Adds the specified data in the last position of the list
+    // Agrega un objeto de tipo vertice en el grafo
     void addVertice(int data)
     {
         if (size==0){
@@ -37,6 +37,7 @@ public:
         }
     }
 
+    // Agrega un objeto de tipo Arista conformado por dos vertices
     void addArista()
     {
         Vertice *vj = tail;
@@ -53,6 +54,7 @@ public:
         currentArista->setNext(newArista);
     }
 
+    // Imprime vertices
     void printVertices()
     {
         Vertice *aux = head;
@@ -63,6 +65,7 @@ public:
         }
     }
 
+    // Imprime aristas
     void printAristas()
     {
         Arista *auxArista = headArista;
@@ -84,7 +87,7 @@ public:
         Arista *headArista;
         int size;
 
-        // Adds the specified data in the first position of the list
+        // Agrega el primer Vertice
         void addFirstVertice(int data)
         {
             Vertice *aux = new Vertice(data, head, nullptr);
@@ -102,6 +105,7 @@ public:
             size++;
         }
 
+        // Agrega la primera arista
         void addFirstArista()
         {
             Vertice *vj = tail;

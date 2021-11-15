@@ -1,4 +1,5 @@
 // Actividad 4.1 - Simulación de listas con grafos - Equipo 2
+// Nota - Se agregó una clase Grafo, esta unió de manera indirecta la clase Vertice y la Arista
 
 #include <iostream>
 #include <cstdlib>
@@ -17,6 +18,7 @@ int main(){
     cin >> datosEntrada;
     datosEntrada.append(",");
 
+    // Método para reconocer los datos de entrada
     for (int i=0; i < datosEntrada.length() ; i++)
     {
         if ((isdigit(datosEntrada[i])) || (datosEntrada[i]==','))
